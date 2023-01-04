@@ -9,7 +9,7 @@ aria2c \
 --daemon=true \
 --enable-rpc \
 --follow-torrent=mem \
---max-connection-per-server=16 \
+--max-connection-per-server=1 \
 --max-overall-upload-limit=1K \
 --peer-agent=qBittorrent/4.3.6 \
 --peer-id-prefix=-qB4360- \
