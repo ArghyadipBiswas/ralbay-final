@@ -3,7 +3,6 @@ FROM harshpreets63/random:simple
 WORKDIR /usr/src/app
 COPY . .
 RUN apt-get autoclean && apt-get autoremove && apt-get clean
-RUN dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n | tail -n 1000
 RUN set -ex \
     && chmod 777 /usr/src/app \ 
     && cp .netrc /root/.netrc \
